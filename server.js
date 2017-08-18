@@ -14,20 +14,45 @@ var articleOne = {
             <div><p>
             it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
             But in fact there is no situations that i faced made me angry that is the truth. i have not faced any difficult situations.
-            but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
-            mind. this help in solving </p>
-            </div>
+            <H3>i tried to add some articles in article three</H3>
+            <br>
+            <hr>
             <div><p>
             it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
             But in fact there is no situations that i faced made me angry that is the truth. i have not faced any difficult situations.
             but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
             mind. this help in solving </p>
             </div>
-            <div><p>
-            it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
+            <div>`          it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
             But in fact there is no situations that i faced made me angry that is the truth. i have not faced any difficult situations.
             but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
             mind. this help in solving</p> 
+            </div>`
+};
+var articleTwo= {
+    title : 'article-two | viki',
+    heading : 'ARTICLE TWO',
+    content : ` <H3>i tried to add some articles in article two</H3>
+            <br>
+            <hr>
+            <div><p>
+            it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
+            But in fact there is no situations that i faced made me angry that is the truth. i have not faced any difficult situations.
+            but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
+            mind. this help in solving </p>
+            </div>`
+};
+var articleThree = {
+    title : 'article three | viki',
+    heading : 'ARTICLE THREE',
+    content : `          <H3>i tried to add some articles in article three</H3>
+            <br>
+            <hr>
+            <div><p>
+            it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
+            But in fact there is no situations that i faced made me angry that is the truth. i have not faced any difficult situations.
+            but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
+            mind. this help in solving </p>
             </div>`
 };
 function create(data){
@@ -62,10 +87,10 @@ app.get('/article-one', function (req,res) {
   res.send(path.join(create(articleOne)));
 });
 app.get('/article-two', function (req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+  res.send(path.join(create(articleTwo)));
 });
 app.get('/article-three', function (req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+  res.send(path.join(create(articleThree)));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
