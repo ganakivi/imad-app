@@ -15,9 +15,8 @@ var articles={
             <div><p>
             it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
             But in fact there is no situations that i faced made me angry that is the truth. i have not faced any difficult situations.
-            <H3>i tried to add some articles in article three</H3>
-            <br>
-            <hr>
+            </p>
+            </div>
             <div><p>
             it is the best thing with a little improvement in my experience. there is nothing wrong in trying this. i normally won't get angry.
             But in fact there is no situations that i faced made me angry that is the truth. i have not faced any difficult situations.
