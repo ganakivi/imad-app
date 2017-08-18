@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles={
+    articleOne : {
     title :'article one | viki',
     heading : 'ARTICLE ONE',
     content : `            <H3>i tried to add some articles</H3>
@@ -28,8 +29,8 @@ var articleOne = {
             but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
             mind. this help in solving</p> 
             </div>`
-};
-var articleTwo= {
+},
+    articleTwo : {
     title : 'article-two | viki',
     heading : 'ARTICLE TWO',
     content : ` <H3>i tried to add some articles in article two</H3>
@@ -41,8 +42,8 @@ var articleTwo= {
             but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
             mind. this help in solving </p>
             </div>`
-};
-var articleThree = {
+},
+    articleThree : {
     title : 'article three | viki',
     heading : 'ARTICLE THREE',
     content : `          <H3>i tried to add some articles in article three</H3>
@@ -54,6 +55,7 @@ var articleThree = {
             but if some situations lead to angry there is a feel always come that this is not the correct situation. and a lecture begins in my
             mind. this help in solving </p>
             </div>`
+}
 };
 function createfun(data){
 var template=    `<!doctype html>
@@ -83,14 +85,8 @@ return template;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one', function (req,res) {
-  res.send(createfun(articleOne));
-});
-app.get('/article-two', function (req,res){
-  res.send(createfun(articleTwo));
-});
-app.get('/article-three', function (req,res){
-  res.send(createfun(articleThree));
+app.get('/:articleName', function (req,res) {
+  res.send(createfun(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
