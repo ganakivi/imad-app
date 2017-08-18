@@ -78,7 +78,7 @@ var template=    `<!doctype html>
             ${data.content}
         </div>
     </body>
-</html>`
+</html>`;
 return template;
 }
 
