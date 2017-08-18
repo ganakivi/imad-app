@@ -84,13 +84,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one', function (req,res) {
-  res.send(path.join(create(articleOne)));
+  res.send(create(articleOne));
 });
 app.get('/article-two', function (req,res){
-  res.send(path.join(create(articleTwo)));
+  res.send(create(articleTwo));
 });
 app.get('/article-three', function (req,res){
-  res.send(path.join(create(articleThree)));
+  res.send(create(articleThree));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
