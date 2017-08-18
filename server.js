@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-    articleOne : {
+    'article-one' : {
     title :'article one | viki',
     heading : 'ARTICLE ONE',
     content : `            <H3>i tried to add some articles</H3>
@@ -30,7 +30,7 @@ var articles={
             mind. this help in solving</p> 
             </div>`
 },
-    articleTwo : {
+    'article-two' : {
     title : 'article-two | viki',
     heading : 'ARTICLE TWO',
     content : ` <H3>i tried to add some articles in article two</H3>
@@ -43,7 +43,7 @@ var articles={
             mind. this help in solving </p>
             </div>`
 },
-    articleThree : {
+    'article-three' : {
     title : 'article three | viki',
     heading : 'ARTICLE THREE',
     content : `          <H3>i tried to add some articles in article three</H3>
