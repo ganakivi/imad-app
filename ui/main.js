@@ -3,6 +3,10 @@ alert('Hi, It is Viki');
 var element = document.getElementById('text');
 element.innerHTML = 'this is the new Text';
 var img = document.getElementById('image');
+var marginval= 0;
+function moveleft(){
+ img.style.marginLeft = marginval++;
+}
 img.onclick = function (){
-    img.style.marginLeft = '130px' ;
+    var interval = setInterval(moveleft, 30);
 };
