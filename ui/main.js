@@ -6,9 +6,10 @@ var img = document.getElementById('image');
 var marginval= 0;
 var increment=1;
 function moveleft(){
-    marginval+=increment;if(marginval>900)
+    marginval+=increment;
+    if(marginval>400)
     increament=-1;
-    if(marginval<100)
+    if(marginval<-400)
     increament=1;
  img.style.marginLeft = marginval+ 'px';
 }
