@@ -9,7 +9,7 @@ button.onclick = function(){
             }
         }
     };
-    resuest.open('GET','http://ganakivi.imad.hasura-app.io/counter',true);
+    request.open('GET','http://ganakivi.imad.hasura-app.io/counter',true);
     request.send();
 };
 var smt=document.getElementById('smt');
