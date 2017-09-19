@@ -5,9 +5,7 @@ button.onclick = function(){
         if(request.readyState === XMLHttpRequest.DONE)
         {
             if(request.status === 200){
-                var counter = request.responseText;
-                var span = document.getElementById('clicked');
-                span.innerHTML = counter.toString();
+                document.getElementById('clicked').innerHTML = (request.responseText).toString();
             }
         }
     };
