@@ -1,4 +1,4 @@
-var bn=document.getElementById('click');
+var bn=document.getElementById('cl');
 bn.onclick = function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function (){
