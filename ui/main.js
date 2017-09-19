@@ -8,9 +8,9 @@ var increment=1;
 function moveleft(){
     marginval+=increment;
     if(marginval>400)
-    increament=-1;
+    increment=-1;
     if(marginval<-400)
-    increament=1;
+    increment=1;
  img.style.marginLeft = marginval+ 'px';
 }
 img.onclick = function (){
