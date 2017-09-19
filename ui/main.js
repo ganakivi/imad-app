@@ -4,7 +4,7 @@ bn.onclick = function(){
     request.onreadystatechange = function (){
         if(request.readyState === XMLHttpRequst.DONE)
         if(request.status === 200){
-            var counter= request.responseTest;
+            var counter= request.responseText;
             var span = document.getElementById('clicked');
             span.innerHTML = counter.toString();
         }
