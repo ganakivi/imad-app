@@ -1,5 +1,5 @@
 var bn=document.getElementById('click');
-bn.onclick = function(req,res){
+bn.onclick = function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function (){
         if(request.readyState === XMLHttpRequst.DONE)
