@@ -14,15 +14,12 @@ button.onclick = function(){
     resuest.open('GET','http://ganakivi.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-var val=document.getElementById('name');
 var smt=document.getElementById('smt');
+var list='';
 smt.onclick = function(){
-  var names=['name1','name2','name3','name4'];
-  var list='';
-  for(var i=0;i<names.length;i++)
-  {
-      list+='<li>'+names[i];
-  }
+    var val=document.getElementById('name');
+    var name=val.value;
+          list+='<li>'+name;
   var lis=document.getElementById('list');
   lis.innerHTML=list;
 };
