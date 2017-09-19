@@ -1,10 +1,10 @@
-var bn=document.getElementById('cl');
-bn.onclick = function(){
+var button=document.getElementById('cl');
+button.onclick = function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function (){
         if(request.readyState === XMLHttpRequest.DONE)
         if(request.status === 200){
-            var counter= request.responseText;
+            var counter = request.responseText;
             var span = document.getElementById('clicked');
             span.innerHTML = counter.toString();
         }
