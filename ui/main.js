@@ -23,6 +23,12 @@ smt.onclick = function(){
   var lis=document.getElementById('list');
   lis.innerHTML=list;
 };
+var clearing=document.getElementById('clr');
+clearing.onclick =function(){
+    list='';
+  var lis=document.getElementById('list');
+  lis.innerHTML=list;
+};
 var img = document.getElementById('image');
 var marginval= 0;
 var increment=1;
