@@ -5,10 +5,12 @@ button.onclick = function(){
     request.send(null);
     request.onreadystatechange = function (){
         if(request.readyState === XMLHttpRequest.DONE)
-        if(request.status === 200){
-            var counter = request.responseText;
-            var span = document.getElementById('clicked');
-            span.innerHTML = counter.toString();
+        {
+            if(request.status === 200){
+                var counter = request.responseText;
+                var span = document.getElementById('clicked');
+                span.innerHTML = counter.toString();
+            }
         }
     };
 };
