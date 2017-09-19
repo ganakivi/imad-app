@@ -21,7 +21,7 @@ body {
     color: darkorange;
     margin: 0 auto;
     max-width: 900px;
-    font-family: monospace;
+    font-family: inherit;
     font-size: 14px;
     padding-top: 49px;
     padding-left: 23px;
