@@ -9,9 +9,9 @@ bn.onclick = function(){
             span.innerHTML = counter.toString();
         }
     };
+    resuest.open('GET','http://ganakivi.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
-resuest.open('GET','http://ganakivi.imad.hasura-app.io/counter',true);
-request.send(null);
 var img = document.getElementById('image');
 var marginval= 0;
 var increment=1;
