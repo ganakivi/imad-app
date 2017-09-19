@@ -1,6 +1,8 @@
 var button=document.getElementById('cl');
 button.onclick = function(){
     var request = new XMLHttpRequest();
+    resuest.open('GET','http://ganakivi.imad.hasura-app.io/counter',true);
+    request.send(null);
     request.onreadystatechange = function (){
         if(request.readyState === XMLHttpRequest.DONE)
         if(request.status === 200){
@@ -9,8 +11,6 @@ button.onclick = function(){
             span.innerHTML = counter.toString();
         }
     };
-    resuest.open('GET','http://ganakivi.imad.hasura-app.io/counter',true);
-    request.send(null);
 };
 var img = document.getElementById('image');
 var marginval= 0;
