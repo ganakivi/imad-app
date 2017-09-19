@@ -1,5 +1,5 @@
 var bn=document.getElementById('click');
-bn.onckick = function(req,res){
+bn.onclick = function(req,res){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function (){
         if(request.readyState === XMLHttpRequst.DONE)
