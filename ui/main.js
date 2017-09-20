@@ -15,12 +15,28 @@ button.onclick = function(){
 var smt=document.getElementById('smt');
 var list='';
 smt.onclick = function(){
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+      if(request.readyState === XMLHttpRequest.DONE&&request.status===200)
+      {
+          var names = request.responseText;
+          names = JSON.parse(names);
+          var list ='';
+          for(var i=0;i<names.length;i++)
+          list+='<li>'+names[i];
+      }
+    };
     var val=document.getElementById('name');
+    var name=val.value;
+    request.open('GET','ganakivi.imad.hasura-app.io/summit-name?name='+name,true);
+    request.send();
+      
+/*    var val=document.getElementById('name');
     var name=val.value;
           list+='<li>'+name;
   var lis=document.getElementById('list');
   lis.innerHTML=list;
-};
+*/};
 var clearing=document.getElementById('clr');
 clearing.onclick =function(){
     list='';
