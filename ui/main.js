@@ -31,7 +31,7 @@ smt.onclick = function(){
     var val=document.getElementById('name');
     var name=val.value;
     request.open('GET','/summit-name?name='+name,true);
-    request.send();
+    request.send(null);
       
 /*    var val=document.getElementById('name');
     var name=val.value;
