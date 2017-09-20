@@ -30,7 +30,7 @@ smt.onclick = function(){
     };
     var val=document.getElementById('name');
     var name=val.value;
-    request.open('GET','ganakivi.imad.hasura-app.io/summit-name?name='+name,true);
+    request.open('GET','/summit-name?name='+name,true);
     request.send();
       
 /*    var val=document.getElementById('name');
