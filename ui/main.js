@@ -24,6 +24,8 @@ smt.onclick = function(){
           var list ='';
           for(var i=0;i<names.length;i++)
           list+='<li>'+names[i];
+          var lis=document.getElementById('list');
+          lis.innerHTML=list;
       }
     };
     var val=document.getElementById('name');
@@ -34,9 +36,9 @@ smt.onclick = function(){
 /*    var val=document.getElementById('name');
     var name=val.value;
           list+='<li>'+name;
-*/  var lis=document.getElementById('list');
+ var lis=document.getElementById('list');
   lis.innerHTML=list;
-};
+*/};
 /*var clearing=document.getElementById('clr');
 clearing.onclick =function(){
     list='';
