@@ -15,7 +15,7 @@ button.onclick = function(){
 var smt=document.getElementById('smt');
 var list='';
 smt.onclick = function(){
-/*    var request = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
       if(request.readyState === XMLHttpRequest.DONE&&request.status===200)
       {
@@ -32,13 +32,13 @@ smt.onclick = function(){
     var name=val.value;
     request.open('GET','/summit-name?name='+name,true);
     request.send(null);
-*/      
-    var val=document.getElementById('name');
+      
+/*    var val=document.getElementById('name');
     var name=val.value;
           list+='<li>'+name;
  var lis=document.getElementById('list');
   lis.innerHTML=list;
-};
+*/};
 /*var clearing=document.getElementById('clr');
 clearing.onclick =function(){
     list='';
